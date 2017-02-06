@@ -1,10 +1,4 @@
-//<![CDATA[
-(function($){var newerLink=$('a.blog-pager-newer-link');var olderLink=$('a.blog-pager-older-link');$.get(newerLink.attr('href'),function(data){newerLink.html('<h6>Next</h6><h5>'+$(data).find('.post h1.post-title').text()+'</h5>')},"html");$.get(olderLink.attr('href'),function(data2){olderLink.html('<h6>Previous</h6><h5>'+$(data2).find('.post h1.post-title').text()+'</h5>')},"html")})(jQuery);
-//]]>
-//<![CDATA[ $("#comment_block").each(function(){$('i[rel="pre"]',this).replaceWith(function(){return $("<pre></pre>").append($("<code></code>").append($(this).contents()))});$('i[rel="code"]',this).contents().unwrap().wrap("<code/>")}); //]]>
-//<![CDATA[
-$('.comment_body p').each(function(){$('i[rel="pre"]').replaceWith(function(){return $('<pre>'+$(this).html()+'</pre>')})});
-//]]>
+
 //<![CDATA[ 
 var pres=document.getElementsByTagName("pre");for(var i=0;i<pres.length;i++){pres[i].addEventListener("click",function(){var selection=getSelection();var range=document.createRange();range.selectNodeContents(this);selection.removeAllRanges();selection.addRange(range)},false)}
 //]]>
