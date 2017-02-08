@@ -1,7 +1,5 @@
 //<![CDATA[
 (function(a){a.organicTabs=function(c,b){var d=this;d.$el=a(c);d.$nav=d.$el.find(".navtab");d.init=function(){d.options=a.extend({},a.organicTabs.defaultOptions,b);a(".hide").css({position:"relative",top:0,left:0,display:"none"});d.$nav.delegate("li > a","click",function(){var g=d.$el.find("a.current").attr("href").substring(1),f=a(this),e=f.attr("href").substring(1),h=d.$el.find(".list-tabwrap"),i=h.height();h.height(i);if((e!=g)&&(d.$el.find(":animated").length==0)){d.$el.find("#"+g).fadeOut(d.options.speed,function(){d.$el.find("#"+e).fadeIn(d.options.speed);var j=d.$el.find("#"+e).height();h.animate({height:j});d.$el.find(".navtab li a").removeClass("current");f.addClass("current")})}return false})};d.init()};a.organicTabs.defaultOptions={speed:300};a.fn.organicTabs=function(b){return this.each(function(){(new a.organicTabs(this,b))})}})(jQuery);    
-//
-function getCurrentYear(){var e=new Date;return e.getFullYear()}el=document.getElementById(&quot;current-year&quot;),el.innerHTML=getCurrentYear();
 // Back to top
 jQuery(document).ready(function(e){var t=e(&quot;#backtotop&quot;);e(window).scroll(function(){e(this).scrollTop()&gt;=800?t.show(10).animate({opacity:&quot;1&quot;},10):t.animate({opacity:&quot;0&quot;},10)});t.click(function(t){t.preventDefault();e(&quot;html,body&quot;).animate({scrollTop:0},400)})})
 // Menu Top
