@@ -1,4 +1,4 @@
-<script language="javascript">
+
         let allData = [];
         let filteredData = [];
         let currentPage = 1;
@@ -1644,4 +1644,3 @@
                 }
             });
         });
-</script>
